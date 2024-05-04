@@ -327,7 +327,7 @@ const PostListing = () => {
         <div className="effectbtn flex justify-center items-center text-center mt-10 rounded-full">
           <button
             className="btn btn-secondary btn-outline cursor-pointer rounded-full"
-            onClick={() => setDisplayCount(displayCount + 6)}
+            onClick={() => setDisplayCount(displayCount + 9)}
           >
             Show More
           </button>
