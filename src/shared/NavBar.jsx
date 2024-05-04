@@ -13,7 +13,7 @@ const NavBar = () => {
   useEffect(() => {
     setLoading(true);
     if (email) {
-      fetch(`http://localhost:5000/user/${email}`)
+      fetch(`https://brain-op-server.vercel.app/user/${email}`)
         .then((res) => res.json())
         .then((data) => {
           setuserData(data);

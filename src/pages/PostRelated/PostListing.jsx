@@ -15,7 +15,7 @@ const PostListing = () => {
     setIsLoading(true);
 
     axiosSecure
-      .get("http://localhost:5000/posts")
+      .get("https://brain-op-server.vercel.app/posts")
       .then((response) => {
         const data = response.data;
         setAllPosts(data);

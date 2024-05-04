@@ -50,7 +50,7 @@ const Register = () => {
         console.log(result.user);
         setSuccess("User Created Successfully");
         const user = { name, email, password };
-        fetch("http://localhost:5000/users", {
+        fetch("https://brain-op-server.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -90,7 +90,7 @@ const Register = () => {
         const photoURL = result?.user?.photoURL;
         const user = { email, displayName, photoURL };
         console.log(user);
-        fetch("http://localhost:5000/user", {
+        fetch("https://brain-op-server.vercel.app/user", {
           method: "POST",
           headers: {
             "content-type": "application/json",
